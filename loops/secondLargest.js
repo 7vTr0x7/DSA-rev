@@ -16,7 +16,6 @@ const sencondLargest = (arr) => {
       second = arr[i];
     }
   }
-
   return second;
 };
 
