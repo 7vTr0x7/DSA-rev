@@ -1,6 +1,10 @@
 const arr = [6, 7, 8, 9, 87, 89];
 
 const sencondLargest = (arr) => {
+  if (arr.length < 2) {
+    return null;
+  }
+
   let firstLargest = -Infinity;
   let second = -Infinity;
 
