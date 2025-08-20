@@ -1,4 +1,4 @@
-const arr = [6, 7, 8, 9, 87, 89];
+const arr = [6, 7, 8, 9, 87, 89, 89];
 
 const sencondLargest = (arr) => {
   if (arr.length < 2) {
@@ -12,7 +12,7 @@ const sencondLargest = (arr) => {
     if (arr[i] > firstLargest) {
       second = firstLargest;
       firstLargest = arr[i];
-    } else if (arr[i] > second) {
+    } else if (arr[i] > second && arr[i] !== firstLargest) {
       second = arr[i];
     }
   }
