@@ -6,6 +6,7 @@ const printPattern = () => {
     for (let j = 0; j < n; j++) {
       row += "*";
     }
+    
     console.log(row);
   }
 };
