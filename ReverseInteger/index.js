@@ -24,6 +24,9 @@ const reverse = (n) => {
     n = Math.floor(n / 10);
   }
 
+  const limit = 2 ** 31;
+  if (rev < -limit || rev > limit - 1) return 0;
+
   return copy > 0 ? rev : -rev;
 };
 
